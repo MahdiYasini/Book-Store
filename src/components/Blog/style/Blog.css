@@ -12,7 +12,7 @@
 .header-logo {
     padding: 0.5rem;
     font-size: 1.7rem;
-    color: #4CBB17;
+    color:  #ff9f00;
 }
 
 .header .header-content ul {
@@ -23,6 +23,19 @@
 
 
 .header .header-content ul li  a {
-    color: #4CBB17;
+    color: #ff9f00;
+    font-size: 1.2rem;
     padding: 0.5rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.footer {
+    text-align: center; 
+    background: #333
+}
+
+.footer p {
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    color: #fff;
 }
