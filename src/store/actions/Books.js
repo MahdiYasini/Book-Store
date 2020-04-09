@@ -7,9 +7,16 @@ export const selectBook = (bookInfo) => {
     }
 };
 
-export const deleteSelectedBook = (bookInfo) => {
+export const addToCart = (booksInfo) => {
     return {
-        type: actionTypes.DELETE_SELECTED_BOOK,
+        type: actionTypes.ADD_TO_CART,
+        booksInfo
+    }
+}
+
+export const deleteBookFromCart = (bookInfo) => {
+    return {
+        type: actionTypes.DELETE_BOOK_FROM_CART,
         bookInfo
     }
 };

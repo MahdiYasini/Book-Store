@@ -1,5 +1,6 @@
 export {
     selectBook,
-    deleteSelectedBook,
+    addToCart,
+    deleteBookFromCart,
     buyBooks
 } from './Books';
