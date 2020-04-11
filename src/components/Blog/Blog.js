@@ -1,7 +1,10 @@
 import React from 'react'
 import "./style/Blog.css"
+import { Link, Switch, Route } from 'react-router-dom';
 
 import { GiBookCover } from "react-icons/gi";
+
+import BooksContainer from '../../container/BooksContainer/Bookscontainer';
 
 const Blog = () => {
     return (
@@ -11,17 +14,22 @@ const Blog = () => {
                     <div className="header-logo">
                         <h3>
                             < GiBookCover />
-                            &ensp; The Book Store
+                            &ensp; The 943 Book Store
                         </h3>
                     </div>
                     <ul>
-                        <li>Cart</li>
-                        <li>Account</li>
-                        <li>Login/signup</li>
+                        <li><Link to="">Cart</Link></li>
+                        <li><Link to="">Account</Link></li>
+                        <li><Link to="">Login</Link></li>
                     </ul>
                 </div>
             </header>
-            <footer>
+            <section>
+                <Switch>
+                    <Route path = "/" component = {BooksContainer}/>
+                </Switch>
+            </section>
+            <footer className="footer">
                 <p>ABOuZAR, All Right Reserved</p>
             </footer>
         </>
