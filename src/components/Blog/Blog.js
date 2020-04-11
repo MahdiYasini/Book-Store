@@ -4,7 +4,7 @@ import { Link, Switch, Route } from 'react-router-dom';
 
 import { GiBookCover } from "react-icons/gi";
 
-import BooksContainer from '../../container/BooksContainer/Bookscontainer';
+import BooksContainer from '../../container/BooksContainer/BooksContainer';
 
 const Blog = () => {
     return (
