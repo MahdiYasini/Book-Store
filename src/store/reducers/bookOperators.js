@@ -20,7 +20,7 @@ const reducer = (state = initialState, action) => {
 
         case actionTypes.DELETE_BOOK_FROM_CART:
             return updateObject(state, {
-                selectedBooks: state.selectedBooks.filter(book => book.name !== action.bookInfo.name)
+                booksInCart: state.booksInCart.filter(bookInfo => bookInfo.book.title !== action.bookName)
             })
 
         default:

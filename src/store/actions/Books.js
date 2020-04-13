@@ -14,10 +14,10 @@ export const addToCart = (booksInfo) => {
     }
 }
 
-export const deleteBookFromCart = (bookInfo) => {
+export const deleteBookFromCart = (bookName) => {
     return {
         type: actionTypes.DELETE_BOOK_FROM_CART,
-        bookInfo
+        bookName
     }
 };
 
