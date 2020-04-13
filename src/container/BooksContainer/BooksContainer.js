@@ -29,7 +29,7 @@ const BooksContainer = (props) => {
                         <Book key={book.title + index} bookInfo={book} />
                     </Link>
                 </Box>
-            ))};
+            ))}
         </Box>
     );
 };
