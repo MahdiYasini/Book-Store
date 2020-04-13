@@ -6,6 +6,7 @@ import { GiBookCover } from "react-icons/gi";
 
 import BooksContainer from '../../container/BooksContainer/BooksContainer';
 import BookInfo from '../BookInfo/BookInfo';
+import CartContainer from '../../container/CartContainer/CartContainer';
 
 const Blog = () => {
     return (
@@ -19,7 +20,7 @@ const Blog = () => {
                         </h3>
                     </div>
                     <ul>
-                        <li><Link to="">Cart</Link></li>
+                        <li><Link to="/cart">Cart</Link></li>
                         <li><Link to="">Account</Link></li>
                         <li><Link to="">Login</Link></li>
                     </ul>
@@ -29,6 +30,7 @@ const Blog = () => {
                 <Switch>
                     <Route path = "/" exact component = {BooksContainer}/>
                     <Route path = "/bookInfo" exact component = {BookInfo}/>
+                    <Route path = "/cart" exact component = {CartContainer}/>
                 </Switch>
             </section>
             <footer className="footer">
