@@ -5,6 +5,7 @@ import { Link, Switch, Route } from 'react-router-dom';
 import { GiBookCover } from "react-icons/gi";
 
 import BooksContainer from '../../container/BooksContainer/BooksContainer';
+import BookInfo from '../BookInfo/BookInfo';
 
 const Blog = () => {
     return (
@@ -26,7 +27,8 @@ const Blog = () => {
             </header>
             <section>
                 <Switch>
-                    <Route path = "/" component = {BooksContainer}/>
+                    <Route path = "/" exact component = {BooksContainer}/>
+                    <Route path = "/bookInfo" exact component = {BookInfo}/>
                 </Switch>
             </section>
             <footer className="footer">
