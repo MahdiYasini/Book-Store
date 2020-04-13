@@ -3,10 +3,11 @@ import { updateObject } from '../utility';
 
 const initialState = {
     selectedBook: null,
-    booksInCart: null
+    booksInCart: []
 };
 
 const reducer = (state = initialState, action) => {
+    console.log('action', action)
     switch (action.type) {
         case actionTypes.SELECT_BOOK:
             return updateObject(state, {
@@ -15,8 +16,7 @@ const reducer = (state = initialState, action) => {
 
         case actionTypes.ADD_TO_CART:
             return updateObject(state, {
-                booksInCart: [state.booksInCart,
-                action.bookInfo]
+                booksInCart: state.booksInCart.concat(action.booksInfo),
             });
 
         case actionTypes.DELETE_BOOK_FROM_CART:
